@@ -43,6 +43,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1834A1CF221CBA5200BE411E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18751CF7221C5C2400C7B91F /* Task.swift */,
+				1834A1CD221CA0CE00BE411E /* Formatting.swift */,
+				18751CF9221C5C3300C7B91F /* TaskList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1834A1D0221CBAC100BE411E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1834A1CB221C97B100BE411E /* DetailViewController.swift */,
+				18751CF5221C58B500C7B91F /* TaskTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1834A1D1221CBAEE00BE411E /* Supporting Files  */ = {
+			isa = PBXGroup;
+			children = (
+				18751CE3221C582C00C7B91F /* AppDelegate.swift */,
+				18751CEA221C582D00C7B91F /* Assets.xcassets */,
+			);
+			path = "Supporting Files ";
+			sourceTree = "<group>";
+		};
+		1834A1D2221CBB1800BE411E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18751CE7221C582C00C7B91F /* Main.storyboard */,
+				18751CEC221C582D00C7B91F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		18751CD7221C582C00C7B91F = {
 			isa = PBXGroup;
 			children = (
@@ -62,15 +99,10 @@
 		18751CE2221C582C00C7B91F /* Task List */ = {
 			isa = PBXGroup;
 			children = (
-				18751CF7221C5C2400C7B91F /* Task.swift */,
-				18751CF9221C5C3300C7B91F /* TaskList.swift */,
-				18751CE3221C582C00C7B91F /* AppDelegate.swift */,
-				18751CE7221C582C00C7B91F /* Main.storyboard */,
-				1834A1CD221CA0CE00BE411E /* Formatting.swift */,
-				1834A1CB221C97B100BE411E /* DetailViewController.swift */,
-				18751CF5221C58B500C7B91F /* TaskTableViewController.swift */,
-				18751CEA221C582D00C7B91F /* Assets.xcassets */,
-				18751CEC221C582D00C7B91F /* LaunchScreen.storyboard */,
+				1834A1CF221CBA5200BE411E /* Model */,
+				1834A1D2221CBB1800BE411E /* View */,
+				1834A1D0221CBAC100BE411E /* Controllers */,
+				1834A1D1221CBAEE00BE411E /* Supporting Files  */,
 				18751CEF221C582D00C7B91F /* Info.plist */,
 			);
 			path = "Task List";
