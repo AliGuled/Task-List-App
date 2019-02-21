@@ -23,17 +23,30 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2p-A0-bfC">
-                                    <rect key="frame" x="156" y="6" width="63" height="30"/>
+                                    <rect key="frame" x="295" y="7" width="63" height="30"/>
                                     <state key="normal" title="Add Task"/>
                                     <connections>
                                         <action selector="addNewTask:" destination="K1O-dn-P7t" eventType="touchUpInside" id="AwM-N6-orf"/>
                                     </connections>
                                 </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzN-R9-IR6">
+                                    <rect key="frame" x="19" y="4" width="47" height="36"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="47" id="qBd-ff-nAk"/>
+                                    </constraints>
+                                    <state key="normal" title="Edit"/>
+                                    <connections>
+                                        <action selector="toggleEditingMode:" destination="K1O-dn-P7t" eventType="touchUpInside" id="X6A-gJ-3wt"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="t2p-A0-bfC" firstAttribute="centerX" secondItem="vKZ-Rt-OmU" secondAttribute="centerX" id="8y1-Ff-PvP"/>
-                                <constraint firstItem="t2p-A0-bfC" firstAttribute="top" secondItem="vKZ-Rt-OmU" secondAttribute="top" constant="6" id="O5Z-TZ-49g"/>
+                                <constraint firstItem="EzN-R9-IR6" firstAttribute="top" secondItem="vKZ-Rt-OmU" secondAttribute="top" constant="4" id="5Qr-LD-VDI"/>
+                                <constraint firstItem="t2p-A0-bfC" firstAttribute="centerX" secondItem="vKZ-Rt-OmU" secondAttribute="centerX" constant="139" id="8y1-Ff-PvP"/>
+                                <constraint firstItem="t2p-A0-bfC" firstAttribute="top" secondItem="vKZ-Rt-OmU" secondAttribute="top" constant="7" id="O5Z-TZ-49g"/>
+                                <constraint firstItem="EzN-R9-IR6" firstAttribute="firstBaseline" secondItem="t2p-A0-bfC" secondAttribute="baseline" id="Rgm-aR-PBa"/>
+                                <constraint firstItem="EzN-R9-IR6" firstAttribute="leading" secondItem="vKZ-Rt-OmU" secondAttribute="leading" constant="19" id="o4v-Td-pqn"/>
                             </constraints>
                         </view>
                         <prototypes>
@@ -73,7 +86,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wnl-ow-sFD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-633" y="141"/>
+            <point key="canvasLocation" x="-634.39999999999998" y="140.77961019490255"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="RUb-yd-aG8">

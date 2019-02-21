@@ -46,8 +46,8 @@
 		1834A1CF221CBA5200BE411E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				18751CF7221C5C2400C7B91F /* Task.swift */,
 				1834A1CD221CA0CE00BE411E /* Formatting.swift */,
+				18751CF7221C5C2400C7B91F /* Task.swift */,
 				18751CF9221C5C3300C7B91F /* TaskList.swift */,
 			);
 			path = Model;
@@ -331,7 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UR5XV943M8;
+				DEVELOPMENT_TEAM = 6NZ8EK4C5H;
 				INFOPLIST_FILE = "Task List/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -349,7 +349,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UR5XV943M8;
+				DEVELOPMENT_TEAM = 6NZ8EK4C5H;
 				INFOPLIST_FILE = "Task List/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

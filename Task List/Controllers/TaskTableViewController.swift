@@ -34,8 +34,52 @@ class TaskTableViewController: UITableViewController {
         present(inputAlert, animated: true, completion: nil)
     }
     
+    @IBAction func toggleEditingMode(_ sender: UIButton) {
+        
+        if isEditing {
+            sender.setTitle("Edit", for: .normal)
+            setEditing(false, animated: true)
+            
+        } else {
+            
+            sender.setTitle("Done", for: .normal)
+            setEditing(true, animated: true)
+            
+            
+            
+        }
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+        return "Destroy it"
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        if destinationIndexPath.row + 1 == tableView.numberOfRows(inSection: 0) {
+            return
+        }
+        
+    }
+    
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        return taskModle.count()
+    }
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete  {
+          
+            taskModle.tasks.remove(at: indexPath.row)
+            self.tableView.deleteRows(at: [indexPath], with: .automatic)
+            self.tableView.reloadData()
+       
+            
+        }
     }
     
     //updating the cell with date and string
