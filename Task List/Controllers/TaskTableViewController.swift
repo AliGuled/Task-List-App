@@ -34,11 +34,10 @@ class TaskTableViewController: UITableViewController {
         present(inputAlert, animated: true, completion: nil)
     }
     
-    @IBAction func toggleEditingMode(_ sender: UIButton) {
+  @IBAction func toggleEditingMode(_ sender: UIButton) {
         
         if isEditing {
             sender.setTitle("Edit", for: .normal)
-            setEditing(false, animated: true)
             
         } else {
             
@@ -50,6 +49,7 @@ class TaskTableViewController: UITableViewController {
         }
         
     }
+    
     
     override func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
         return "Remove"
@@ -102,6 +102,7 @@ class TaskTableViewController: UITableViewController {
             let firstRow = rowSelected?[0]
             let task = taskModle.getTask(at: (firstRow?.row)!)
             detailViewControll.task = task
+        
         }
     }
     
